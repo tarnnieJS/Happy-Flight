@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ui.addonservice.AddOnServiceFragment">
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional Service"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animationView" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="24dp"
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ic_add_on_service" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
