@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModel
 class HomeViewModel(context: Context, lifecycleScope: LifecycleCoroutineScope) : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Your no have any boarding pass..."
+        value = "Go to compose UI"
     }
     val text: LiveData<String> = _text
 }
